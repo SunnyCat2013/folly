@@ -154,6 +154,7 @@ In the folly directory, run:
 ```
   autoreconf -ivf && \
   ./configure --with-boost=/usr/local/include/boost --with-boost-libdir=/usr/local/lib \
+  ./configure --with-boost=/usr/local/include/boost --with-boost-libdir=/usr/local/lib LDFLAGS=-L$DOUBLE_CONVERSION_HOME/ CPPFLAGS=-I$DOUBLE_CONVERSION_HOME/
    && make && make check
   sudo make install
 ```
